@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Festival Cristão</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center">
+ 
+
+      <h1>Festival de Música Cristã</h1> <br>
+      <h2>Tem um grupo musical cristão e deseja aparecer no cénario nacional ?</h2>
+      <h3>Não perca essa oportunidade única, um mega evento acontecerá em PRESIDENTE PRUDENTE - SP</h3><br>
+      <h4>Inicío do evento</h4>
+      <div class="countdown d-flex justify-content-center" data-count="2024/12/5">
+        <div>
+          <h3>%d</h3>
+          <h4>Dias</h4>
+        </div>
+        <div>
+          <h3>%h</h3>
+          <h4>Horas</h4>
+        </div>
+        <div>
+          <h3>%m</h3>
+          <h4>Minutos</h4>
+        </div>
+        <div>
+          <h3>%s</h3>
+          <h4>Segundos</h4>
+        </div>
+      </div>
+
+
+      <div class="text-center">
+        <h3>Participação confirmada Thales Roberto e grupo Kemuel</h3>
+        <video width="650px" height="600px" controls autoplay muted>
+            <source src="assets/video/Thalles Roberto, Kemuel - A Resposta.mp4">
+        </video>
+      </div>
+
+    </div>
+  </header><!-- End #header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <h2>Uma mega estrutura para o evento !!!</h2>
+            <h3>Será dois dia de muito louvor e adoração onde quatro jurados irão avaliar as performaces das bandas e selecionar
+              as três melhores junto com o público.
+            </h3>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+                O evento será gratuito a todos que desejarem prestigia-lo.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Ao término da ultima banda será divuldado um qrcode onde os telespectadores irão votar nas duas melhores apresentações, e cada jurado também. Os selecionados iram para o segundo dia, caso os escolhidos pelo público seja o mesmo que o de algum jurado, vai o terceiro mais votado e assim por diante.</li>
+              <li><i class="bi bi-check"></i>No segundo dia serão eleitos as três bandas vencedores, o primeiro lugar irá ganhar um premio de R$ 50 mil reais e irá gravar um CD na Sony Music, o segundo lugar R$ 40 mil reais e uma temporada de aperfeiçoamento de duas semanas na Universal Music, e o terceiro lugar R$ 25 mil reais e irá ser acompanhada por agentes para futuras oportunidades de contratos</li>
+              <li><i class="bi bi-check"></i>Entre os jurados os fenômenos gospel Thales Roberto e grupo Kemuel </li>
+              <li><i class="bi bi-check"></i>Contaremos com o apoio da polícia militar e corpo de bombeiros no local </li>
+            </ul>
+            <p class="fst-italic">
+              Seja você também um dos que vão se apresentar
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Cadastre seu grupo musical agora mesmo </h2>
+        </div>
+
+
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10">
+
+            <h3 class="text-center">Preencha o seguinte formulário</h3>
+
+              <!--Formulario-->
+
+            <form action="#" method="post" role="form" class="php-email-form">
+              <div class="row">
+
+                <div class="col-md-6 form-group">
+                  <label for="name">Nome do grupo/banda: <span class="obrigatorio">*<span id="erro_nome"></span></span></label>
+                  <input type="text" name="name" class="form-control" id="name" onblur="verifica_nome()" maxlength="15" placeholder="ex: grupo Uma Voz" required>
+                </div>
+
+                <div class="col-md-6 form-group">
+                  <label for="email">Email para contato: <span class="obrigatorio">*<span id="erro_email"></span></span></label>
+                  <input type="email" class="form-control" name="email" id="email" onblur="verifica_email()" placeholder="ex: gp_umavoz@contact.com.br" required>
+                </div>
+
+                <div class="col-md-6 form-group">
+                  <label for="tell">Telefone para contato: <span class="obrigatorio">*</span></label>
+                  <input type="tel" class="form-control" name="tel" id="tell" maxlength="14"  onkeyup="valida_telefone()" placeholder="ex: (99)99999-9999" required>
+                </div>
+
+                <div class="col-md-6 form-group">
+                  <label for="number">Número de integrantes: <span class="obrigatorio">*<span id="erro_num"></span></span></label>
+                  <input type="number" class="form-control" name="number" id="number" onblur="valida_num()" min="1" max="9" placeholder="Máximo: 9" required>
+                </div>
+
+                <div class="col-md-6 form-group">
+                  <label for="cpf">Cpf do responsável: <span class="obrigatorio">*<span id="erro_cpf"></span></span></label>
+                  <input type="text" class="form-control" name="text" id="cpf" onblur="valida_cpf()" onkeyup="mascaraCPF()" maxlength="14" placeholder="999.999.999-99" required>
+                </div>
+
+                <div class="col-md-6 form-group">
+                  <label for="cargo">Seu cargo na banda: </label><br>
+                  <select  id="cargo" class="col-md-12 p-2 border-0">
+                    
+                    <option value=""></option>
+                    <option value="agente">Agente</option>
+                    <option value="fundador">Fundador</option>
+                    <option value="cantor">Cantor</option>
+                    <option value="musico">Músico</option>
+                  </select>
+                </div>
+
+            <div class="form-group col-md-5">
+
+              <label>Selecione instrumentos que será necessario: </label>
+              
+              <div class="form-group check">
+                <div><input type="checkbox" id="guitarra"></div>
+                <div><label for="guitarra">Guitarra</label></div>
+              </div>
+
+              <div class="form-group check">
+                <div><input type="checkbox" id="violao"></div>
+                <div><label for="violao">Violão</label></div>
+              </div>
+
+              <div class="form-group check">
+                <div><input type="checkbox" id="baixo"></div>
+                <div><label for="baixo">Baixo</label></div>
+              </div>
+              <div class="form-group check">
+                <div><input type="checkbox" id="saxofone"></div>
+                <div><label for="saxofone">Saxofone</label></div>
+              </div>
+            </div>
+
+            <div class="form-group col-md-5">
+              <span class="obrigatorio">Caso não selecionar terá apenas o kit básico</span>
+              
+              <div class="form-group check">
+                
+                <div><input type="checkbox" id="bateria"></div>
+                <div><label for="bateria">Bateria</label></div>
+              </div>
+
+              <div class="form-group check">
+                <div><input type="checkbox" id="teclado"></div>
+                <div><label for="teclado">Teclado</label></div>
+              </div>
+
+              <div class="form-group check">
+                <div><input type="checkbox" id="flautra"></div>
+                <div><label for="flauta">Flauta</label></div>
+              </div>
+
+              <div class="form-group check">
+                <div><input type="checkbox" id="pandeiro"></div>
+                <div><label for="pandeiro">Pandeiro</label></div>
+              </div>
+            </div>
+            
+                  <div class="form-group mt-3">
+                        <label for="texto_area">Nos conte porque você deve ser um dos selecionados para se apresentar : <span class="obrigatorio">*<span id="erro_texto"></span></span></label>
+                        <textarea class="form-control" id="texto_area" onblur="verifica_text()" name="message" rows="5" maxlength="450" placeholder="O Grupo Uma voz é deve ser escolhido pois..." required></textarea>
+                  </div>
+
+                  <div class="col-md-7 ">
+                    <br>
+                    <label for="">Selecione a cor da camisa para a apresentação (iremos fabricar): </label>
+                      <input type="color" class="col-lg-4" style="height: 30px">
+                  </div><br>
+
+
+
+                  <div style="margin-top: 20px;">
+
+                    <p style="color: black; font-weight: 800;">Aceita ter seus dados(nome da banda/cantor, fotos da apresentação etc...) se necessário divulgados ?</p>
+                    <div class="dados">
+                    <div><input type="radio" id="um" name="dados" value="um" required>
+                    <label for="um">Sim</label>
+                    
+                    <input type="radio" id="dois" name="dados" value="dois" required>
+                    <label for="dois">Não</label></div>
+                  </div>
+                  </div>
+
+
+
+  
+                <div class="text-center"><button class="rounded" onclick="verifica_erros()" type="submit">Cadastrar</button></div>
+
+              </div>
+
+
+            </form>
+
+             <!--Fim Formulario-->
+          
+          <div class="row justify-content-center">
+
+            <div class="col-lg-10">
+  
+              <div class="info-wrap">
+                <div class="row">
+                  <div class="col-lg-4 info">
+                    <i class="bi bi-geo-alt"></i>
+                    <h4>Local:</h4>
+                    <p>Parque do povo<br>Presidente Prudente - SP</p>
+                  </div>
+  
+                  <div class="col-lg-4 info mt-4 mt-lg-0">
+                    <i class="bi bi-envelope"></i>
+                    <h4>Email:</h4>
+                    <p>info@org.com<br>suporte@festival.com</p>
+                  </div>
+  
+                  <div class="col-lg-4 info mt-4 mt-lg-0">
+                    <i class="bi bi-phone"></i>
+                    <h4>Telefones:</h4>
+                    <p>(18) 3225-6589<br>(18) 3225-4176</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>ComingSoon</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="assets/js/trabalho.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
